@@ -4,7 +4,7 @@ const billInput = document.querySelector('#input-bill')
 const tipInput = document.querySelector('#input-tip')
 const peopleInput = document.querySelector('#input-people')
 const displayTip = document.querySelector('#display-tip')
-const displyTotal = document.querySelector('#display-total')
+const displayTotal = document.querySelector('#display-total')
 
 //-----------------------------------------------
 // ADD EVENT LISTENERS
@@ -28,4 +28,17 @@ function handleBill(e) {
     console.log (tipOutput)
     console.log (totalOutput)
     console.log (cppOutput)
+
+    //-----------------------------------------------
+    // PUSH OUTPUT VALUES TO DISPLAY
+    function displayOutput () {
+        //check to make sure that the user has input a bill & tip amount before displaying
+        if (billInput.value !== '' && tipInput.value !== '') {
+        displayTip.innerHTML = `$${tipOutput.toFixed(2)}`
+        displayTotal.innerHTML = `$${totalOutput.toFixed(2)}`
+        }
+    }
+
+    displayOutput ();
+
 }
