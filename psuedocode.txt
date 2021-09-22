@@ -72,7 +72,7 @@ calculateTip:
 SET percent to tipInput
 SET bill to billInput
 
-Tip = bill MULTIPLY BY the tip percentage
+Tip = bill MULTIPLY BY the tip percentage DIVIDED by 100
 Total = bill ADD tip
 perPerson = total DIVIDED BY peopleInput
 
