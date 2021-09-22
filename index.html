@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Tip Calculator</h1>
+
+        <div id="user-input">
+
+        <!-- CREATE INPUT FIELDS -->
+        <!-- Input Bill Amount -->
+        <lable>Input Bill Amount</lable>
+        <input 
+        type="number" 
+        id="input-bill" 
+        class="input" 
+        placeholder="20.00" 
+        min=0 
+        step=.01
+        >
+
+        <!-- Input Tip Percentage -->
+        <lable>Input Tip Percentage</lable>
+        <input type="number"
+        id="input-tip"
+        class="input"
+        placeholder="20%"
+        min=10
+        >
+
+        <!-- Input Number of People -->
+        <lable>Input Number of People</lable>
+        <input type="number" 
+        id="input-people" 
+        class="input" 
+        placeholder="2" 
+        min=1 
+        step=1
+        >
+        
+        </div>
+
+        <div id="calc-output">
+        <h2>Tip</h2>
+        <h3 id="display-tip">
+            <!-- Tip Output goes here -->
+        </h3>
+        <h2>Total</h2>
+        <h3 id="display-total">
+              <!-- Total Output goes here -->
+        </h3>
+        </div>
+
+
+        <script src="script.jss"></script>
+    </body>
+</html>
