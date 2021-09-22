@@ -1,0 +1,106 @@
+Challenge 1:
+
+Create the markup for the tip calculator 
+
+DISPLAY "Tip Calculator" in <h1>
+
+GET bill with <input> tag
+	LABEL: "Bill Total"
+	Add attributes: id, class, type, placeholder
+
+GET tip_percentage with <input> tag
+	LABEL: "Tip Percentage"
+	Add attributes: id, class, type, placeholder
+
+GET num_people with <input> tag
+	LABEL: "Number of People"
+	Add attributes: id, class, type, placeholder
+
+DISPLAY "Tip" in <h2> tag
+
+DISPLAY OUTPUT tip with h3 element
+
+DISPLAY "Total" in <h2> tag
+
+DISPLAY OUTPUT total with h3 element
+
+
+
+Challenge 2:
+
+Add attributes to the tags
+
+IDs to use: 
+input-bill
+input-tip
+input-people
+display-tip
+display-total
+
+
+
+Challenge 3:
+
+Add a script tag to the bottom of the body (link to external script)
+
+LINK to Script URL
+
+
+Challenge 4:
+
+Define variables for each of the elements
+
+Create constant variables (const) for:
+billInput
+tipInput
+peopleInput
+displayTip
+displayTotal
+
+
+Challenge 5:
+
+Add listeners to each of the input fields
+
+handleBill:
+
+	IF any INPUT is changed:
+		Run the calculateTip function
+
+calculateTip:
+
+SET percent to tipInput
+SET bill to billInput
+
+Tip = bill MULTIPLY BY the tip percentage
+Total = bill ADD tip
+perPerson = total DIVIDED BY peopleInput
+
+
+
+Challenge 6:
+
+Display the tip and the total
+
+DISPLAY the Tip fixed to 2 decimal places(push to HTML file)
+
+
+
+
+Challenge 7:
+
+Style the tip calculator with a CSS sheet!
+
+Use GRID or FLEX to customize the display of the tip calculator
+
+
+
+STRETCH CHALLENGES:
+
+Split the Bill
+
+Show the Split of the Tip
+
+Add Some Buttons
+
+Add a Menu to Select Common Tip Amounts
