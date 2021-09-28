@@ -1,0 +1,116 @@
+body{
+    background-color: white;
+    font-family: Helvetica;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+h1{
+  text-transform: uppercase;
+  color: olivedrab;
+  border-width: 6px;
+  border-bottom-style: double;
+  border-bottom-color: whitesmoke;
+}
+
+h2 {
+    color: olivedrab;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+label {
+    font-size: 1.6em;
+    margin-top: 10px;
+}
+
+.input {
+    text-align: center;
+    padding: 3px;
+    font-size: 2em;
+    color: gray;
+    font-weight: 600;
+    margin: 20px auto 20px auto;
+    width: 50%;
+    border-style: none;
+    border-width: 0px;
+}
+
+sub {
+  color: gray;
+  width: 50%;
+  margin: -10px auto auto auto;
+  }
+input:active {
+  border-style: none;
+  border-width: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#reveal-num-people {
+  display: none;
+}
+
+#split-bill {
+  margin: 20px auto;
+  padding: 10px;
+}
+
+#input-people {
+  border-style: none;
+}
+
+button {
+  font-size: 1.5em;
+  max-width: 50%;
+  background-color:olivedrab;
+  color: white;
+  height: auto*2;
+  margin: auto;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  padding: 6px 10px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: white;
+  color: olivedrab;
+  border-style: solid;
+  border-color: olivedrab;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+
+
+#user-input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#calc-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  margin: 20px 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  min-height: 160px;
+}

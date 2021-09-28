@@ -14,7 +14,7 @@
 
         <!-- CREATE INPUT FIELDS -->
         <!-- Input Bill Amount -->
-        <lable>Input Bill Amount</lable>
+        <label>Total Bill</label>
         <input 
         type="number" 
         id="input-bill" 
@@ -25,25 +25,38 @@
         >
 
         <!-- Input Tip Percentage -->
-        <lable>Input Tip Percentage</lable>
+        <label>Tip %</label>
         <input type="number"
         id="input-tip"
         class="input"
         placeholder="20%"
         min=10
         >
+        <sub>*must be greater than 10% - be a friendly tipper!</sub>
 
+         <!-- Ask about Splitting the Bill -->
+
+        <label>Split it?
+            <input
+                type="checkbox"
+                class="split-bill"
+                id="split-bill"
+            >    
+        </label>
+
+        <div id="reveal-num-people">
         <!-- Input Number of People -->
-        <lable>Input Number of People</lable>
+        <label id="how-many" for="split-bill">How many ways?</label>
         <input type="number" 
         id="input-people" 
         class="input" 
-        placeholder="2" 
+        placeholder="1" 
         min=1 
         step=1
         >
-        
         </div>
+
+        <button>Calculate</button>
 
         <div id="calc-output">
         <h2>Tip</h2>
