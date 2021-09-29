@@ -1,13 +1,28 @@
+
+/*
+style the body:
+- align all of the text in the center
+- font Helvetica, default size 14px
+- total width of 300px, auto margins
+- white background
+*/
 body{
-    background-color: white;
-    font-family: Helvetica;
-    width: 300px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
+  background-color: white;
+  font-family: Helvetica;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 
+/*
+style the h1 "Tip Calculator"
+- transform uppercase
+- make the font green
+- create an underline effect with double 
+border on the bottom in a light gray
+*/
 h1{
   text-transform: uppercase;
   color: olivedrab;
@@ -16,21 +31,47 @@ h1{
   border-bottom-color: whitesmoke;
 }
 
+/*
+style the h2 (output headers)
+- make the font green
+*/
 h2 {
     color: olivedrab;
 }
 
+/*
+style the h3 (output calculations)
+- make the size 1.7em
+- normal font weight
+- max width 80%
+- auto margins, bottom margin 20px
+*/
 h3 {
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: 400;
-  font-style: normal;
+  max-width: 80%;
+  margin: auto auto 20px auto;
 }
 
+/*
+style the labels:
+- font 1.6em size
+- margin 10px on top
+*/
 label {
     font-size: 1.6em;
     margin-top: 10px;
 }
 
+/*
+style the input class:
+- center the font
+- make the font 2em, gray, and bold (600 weight)
+- create a 20px top/bottom margin and auto left/right
+- add 3px of padding
+- max width is 50%
+- no border
+*/
 .input {
     text-align: center;
     padding: 3px;
@@ -43,35 +84,55 @@ label {
     border-width: 0px;
 }
 
+/*
+style the tip nicely subscript:
+- make it gray and 50% width to match input
+- make the top margin -10px, others auto
+*/
 sub {
   color: gray;
   width: 50%;
   margin: -10px auto auto auto;
   }
-input:active {
-  border-style: none;
-  border-width: 0px;
-}
 
+/*
+eliminate the default buttons on the input
+(works for all browsers except firefox)
+*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
+/*
+default that the split bill section is not shown
+*/
 #reveal-num-people {
   display: none;
 }
 
+/*
+when split bill is shown
+- top/bottom margin 20px, auto left/right
+- 10px padding
+*/
 #split-bill {
   margin: 20px auto;
   padding: 10px;
 }
 
-#input-people {
-  border-style: none;
-}
-
+/*
+style the "Calculate" button:
+- max width 50% with auto margins
+- height = auto*2
+- green background, white font
+- solid white border with 10px radius
+- 6px top/bottom padding, 20px left/right padding
+- top margin 10px
+style the HOVER:
+- invert background and font colors
+*/
 button {
   font-size: 1.5em;
   max-width: 50%;
@@ -83,27 +144,35 @@ button {
   border-color: white;
   border-radius: 10px;
   padding: 6px 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 button:hover {
   background-color: white;
   color: olivedrab;
-  border-style: solid;
   border-color: olivedrab;
-  border-radius: 10px;
-  padding: 6px 10px;
 }
 
 
-
+/*
+user input div:
+- create flex display column
+*/
 #user-input {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
-
+/*
+calc output div:
+- create flex display column
+- justify with space around
+- light gray background to match underline
+- 10px radius
+- 20px top/bottom margin, 10px left/right magin
+- 10px top bottom padding
+- min height 160 px;
+*/
 #calc-output {
   display: flex;
   flex-direction: column;
@@ -111,6 +180,7 @@ button:hover {
   background-color: whitesmoke;
   margin: 20px 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 10px;
   min-height: 160px;
 }

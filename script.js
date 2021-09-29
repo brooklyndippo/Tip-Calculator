@@ -27,9 +27,9 @@ function handleBill(e) {
     const numPeople = parseInt(peopleInput.value)
 
     //reveal the input field for number of people if split bill is checked
-
     revealNumPeople.style.display = check ? "block" : "none"
-    
+
+    //use console log to see if the checkbox is triggered & if reveal is happening
     console.log (check)
     console.log (checkbox)
     console.log (revealNumPeople)
@@ -41,7 +41,8 @@ function handleBill(e) {
     const ppTip = tipOutput / numPeople
     const ppTotal = totalOutput / numPeople
 
-
+    // console log all of the values: the calculated tip, the total (tip + bill), 
+    //if it is split, the per person Tip (tip/people) and per person total (total/people)
     console.log (tipOutput)
     console.log (totalOutput)
     console.log (ppTip)
@@ -63,10 +64,11 @@ function handleBill(e) {
         }
 
         else {
-        displayTip.innerHTML = `$${tipOutput.toFixed(2)}`
-        displayTotal.innerHTML = `$${totalOutput.toFixed(2)}`
+            displayTip.innerHTML = `$${tipOutput.toFixed(2)}`
+            displayTotal.innerHTML = `$${totalOutput.toFixed(2)}`
         }
         
+        //check that the function is running
         console.log ("Output displayed")
     }
 

@@ -97,10 +97,10 @@ Use GRID or FLEX to customize the display of the tip calculator
 
 STRETCH CHALLENGES:
 
-Split the Bill
+Split the Bill - check
 
-Show the Split of the Tip
+Show the Split of the Tip - check
 
-Add Some Buttons
+Add Some Buttons - check
 
 Add a Menu to Select Common Tip Amounts
